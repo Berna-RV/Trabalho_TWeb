@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Room Rent Évora
+    </title>
+    <link rel="stylesheet" href="roomRent.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.svg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scriptsRoomRentEvora.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="top">
+            <img src="images/logo.svg" alt="some text" width=180 height=100>
+            <h1>Room Rent Évora</h1>
+        </div>
+
+
+        <div id="nav">
+            <ul>
+                <li><a href="roomRentEvora.html">Room Rent Évora</a></li>
+                <li><a href="oferta.html">Registar Oferta</a></li>
+                <li><a href="procura.html">Registar Procura</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+                <li><a href="administracao.html">Administração</a></li>
+                <li><a href="mensagens.html">Mensagens</a></li>
+            </ul>
+
+            <form id="search" method="POST">
+                <input id="search_bar" name="tipo" type="text" placeholder="O que procura?">
+                <input id="search_button" type="submit" value="Procurar">
+            </form>
+        </div>
+    </div>
+
+    <div id="principal">
+        <h2 id="tituloOfertas"> Ofertas </h2>
+
+        <div id="ofertas">
+            
+            <div id="primeira_oferta">
+                <br>
+                <img src="images/logo.svg" alt="some text" width=220 height=120>
+                <p class="tipo_alojamento">Tipo de Alojamento: </p>
+                <p class="detalhes">Detalhes: </p>
+                <p class="zona">Zona: </p>
+                <p class="genero">Genero: </p>
+                <p class="preco">Preço: </p>
+                <p class="anunciante">Anunciante: </p>
+                <p class="contacto">Contacto: </p>
+                <p class="data">Data: </p>
+                <p class="estado">Estado: </p>
+                <p class="aid">Aid: </p>
+            </div>
+
+            <div id="segunda_oferta">
+                <br>
+                <img src="images/logo.svg" alt="some text" width=220 height=120>
+                <p class="tipo_alojamento">Tipo de Alojamento: </p>
+                <p class="detalhes">Detalhes: </p>
+                <p class="zona">Zona: </p>
+                <p class="genero">Genero: </p>
+                <p class="preco">Preço: </p>
+                <p class="anunciante">Anunciante: </p>
+                <p class="contacto">Contacto: </p>
+                <p class="data">Data: </p>
+                <p class="estado">Estado: </p>
+                <p class="aid">Aid: </p>
+            </div>
+
+            <div id="terceira_oferta">
+                <br>
+                <img src="images/logo.svg" alt="some text" width=220 height=120>
+                <p class="tipo_alojamento">Tipo de Alojamento: </p>
+                <p class="detalhes">Detalhes: </p>
+                <p class="zona">Zona: </p>
+                <p class="genero">Genero: </p>
+                <p class="preco">Preço: </p>
+                <p class="anunciante">Anunciante: </p>
+                <p class="contacto">Contacto: </p>
+                <p class="data">Data: </p>
+                <p class="estado">Estado: </p>
+                <p class="aid">Aid: </p>
+            </div>
+
+        </div>
+
+        <div>
+            <form action="ofertasList.html">
+              <p> <button id="verTudoOfertas">Ver Tudo</button> </p> 
+            </form>
+        </div>
+
+        <h2 id="tituloProcuras">Procuras</h2>
+        <div id="procuras">
+            <div id="primeira_procura">
+                <br>
+                <img src="images/logo.svg" alt="some text" width=220 height=120>
+                <p class="tipo_alojamento">Tipo de Alojamento: </p>
+                <p class="detalhes">Detalhes: </p>
+                <p class="zona">Zona: </p>
+                <p class="genero">Genero: </p>
+                <p class="preco">Preço: </p>
+                <p class="anunciante">Anunciante: </p>
+                <p class="contacto">Contacto: </p>
+                <p class="data">Data: </p>
+                <p class="estado">Estado: </p>
+                <p class="aid">Aid: </p>
+            </div>
+            <div id="segunda_procura">
+                <br>
+                <img src="images/logo.svg" alt="some text" width=220 height=120>
+                <p class="tipo_alojamento">Tipo de Alojamento: </p>
+                <p class="detalhes">Detalhes: </p>
+                <p class="zona">Zona: </p>
+                <p class="genero">Genero: </p>
+                <p class="preco">Preço: </p>
+                <p class="anunciante">Anunciante: </p>
+                <p class="contacto">Contacto: </p>
+                <p class="data">Data: </p>
+                <p class="estado">Estado: </p>
+                <p class="aid">Aid: </p>
+            </div>
+            <div id="terceira_procura">
+                <br>
+                
+                <img src="images/logo.svg" alt="some text" width=220 height=120>
+                <p class="tipo_alojamento">Tipo de Alojamento: </p>
+                <p class="detalhes">Detalhes: </p>
+                <p class="zona">Zona: </p>
+                <p class="genero">Genero: </p>
+                <p class="preco">Preço: </p>
+                <p class="anunciante">Anunciante: </p>
+                <p class="contacto">Contacto: </p>
+                <p class="data">Data: </p>
+                <p class="estado">Estado: </p>
+                <p class="aid">Aid: </p>
+            </div>
+        </div>
+
+        <div>
+        <form action="procurasList.html">
+            <p>
+            <button id="verTudoProcuras">Ver Tudo</button>
+            </p>
+        </form>
+        </div>
+    </div>
+
+
+    <div id="bottom">
+
+        <div id="contactos">
+
+            <h2>Contactos</h2>
+            <p>geral@roomRentEvora.pt </p>
+            <p>roomRentEvora@gmail.com</p>
+
+        </div>
+
+        <div id="patrocinadores">
+
+            <h2>Patrocinadores</h2>
+            <img src="images/UniversidadedeEvora.png" alt="some text" width=220 height=80>
+            <img src="images/CamaraMunicipal.jpeg" alt="some text" width=140 height=80>
+            <img src="images/EvoraPlaza.png" alt="some text" width=90 height=80>
+
+        </div>
+
+        <div id="creditos">
+
+            <h2>Créditos</h2>
+            <p>Daniel Barreiros l48452</p>
+            <p>Bernardo Vitorino l48463</p>
+
+        </div>
+        
+    </div>
+
+    <br>
+    
+    
+</body>
