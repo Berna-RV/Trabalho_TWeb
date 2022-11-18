@@ -21,8 +21,8 @@ $(document).ready(function () {
                         for (let i = 0; i < mensagens.length; i++) {
                             $("#mensagens").append("<div id=\"" + i + "\"></div>");
 
-                            $("#" + i).append("Remetente:" + mensagens[i].remetente + "<br>");
-                            $("#" + i).append("Mensagem:" + mensagens[i].msg + "<br>");
+                            $("#" + i).append("Remetente: " + mensagens[i].remetente + "<br>");
+                            $("#" + i).append("Mensagem: " + mensagens[i].msg + "<br>");
 
                             $("#" + i).css({
                                 "color": "white",
