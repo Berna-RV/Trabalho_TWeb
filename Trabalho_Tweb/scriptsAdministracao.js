@@ -7,6 +7,8 @@ $(document).ready(function(){
         inativos= data['inativo'];
 
         $(".pagination").append("<a onclick=\"showAtivos()\">Ativos</a><a onclick=\"showInativos()\">Inativos</a>");
+        $("#tituloAdministracao").css({"margin-left":"2%"});
+        $("#botoesPaginacao").css({"margin-left":"2%"});
     })
 })
 
@@ -20,20 +22,21 @@ function showAtivos(){
 
         let aid= ativos[i];
 
-        $(".ads #" + i + "").append("Aid:" + aid + "<br>");
-        $(".ads #" + i + "").append("<a onclick=\"modifyAdStateFromAtivo(" + aid  + ")\">Alterar</a>");
+        $(".ads #" + i + "").append("<br>"+"Aid: " + aid );
+        $(".ads #" + i + "").append("<a onclick=\"modifyAdStateFromInativo(" + aid  + ")\">- Alterar -</a>");
         $(".ads #" + i + "").append("<br><br>");
 
         $(".ads #" + i + "").css({
             "color": "white",
-            "font-size": "17px",
+            "font-size": "18px",
             "background-color": "rgba(56, 138, 170, 0.904)",
             "border": "1px solid #000000",
             "box-shadow": "0 4px 8px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19)", 
-            "margin": "0% 1% 1% 3%",
+            "margin": "2% 1% 1% 2%",
             "display":"inline-block",
-            "width": "10%",
-            "text-align": "center"
+            "width": "11%",
+            "text-align": "center",
+            "border-radius": "15px"
         });
 
         $(".ads a").css({
@@ -41,7 +44,8 @@ function showAtivos(){
             "font-size": "17px",
             "background-color": "white",
             "border": "1px solid #000000",
-            "margin": "0% 1% 1% 3%",
+            "width": "75%",
+            "margin": "0% 0% 0% 0%",
             "display":"inline-block",
             "text-align": "center",
             "border-radius": "5px"
@@ -59,20 +63,21 @@ function showInativos(){
 
         let aid=inativos[i];
 
-        $(".ads #" + i + "").append("Aid:" + aid + "<br>");
-        $(".ads #" + i + "").append("<a onclick=\"modifyAdStateFromInativo(" + aid  + ")\">Alterar</a>");
+        $(".ads #" + i + "").append("<br>"+"Aid: " + aid );
+        $(".ads #" + i + "").append("<a onclick=\"modifyAdStateFromInativo(" + aid  + ")\">- Alterar -</a>");
         $(".ads #" + i + "").append("<br><br>");
 
         $(".ads #" + i + "").css({
             "color": "white",
-            "font-size": "17px",
+            "font-size": "18px",
             "background-color": "rgba(56, 138, 170, 0.904)",
             "border": "1px solid #000000",
             "box-shadow": "0 4px 8px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19)", 
-            "margin": "0% 1% 1% 3%",
+            "margin": "2% 1% 1% 2%",
             "display":"inline-block",
-            "width": "10%",
-            "text-align": "center"
+            "width": "11%",
+            "text-align": "center",
+            "border-radius": "15px"
         });
 
         $(".ads a").css({
@@ -80,7 +85,8 @@ function showInativos(){
             "font-size": "17px",
             "background-color": "white",
             "border": "1px solid #000000",
-            "margin": "0% 1% 1% 3%",
+            "width": "75%",
+            "margin": "0% 0% 0% 0%",
             "display":"inline-block",
             "text-align": "center",
             "border-radius": "5px"

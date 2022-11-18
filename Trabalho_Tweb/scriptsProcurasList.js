@@ -88,7 +88,6 @@ function showDetails(adNumber) {
                 "color": "white",
                 "font-size": "17px",
                 "background-color": "rgba(56, 138, 170, 0.904)",
-                "border": "1px solid #000000",
                 "box-shadow": "0 4px 8px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19)", 
                 "margin": "0% 1% 1% 3%",
                 "width": "45%",
