@@ -93,10 +93,31 @@ function showInativos(){
         });
     }
 }
+
 function modifyAdStateFromAtivo(aid){
-    alert(JSON.stringify(aid));
+    var descricao= prompt("Descrição:");
+    var data= {aid: aid, estado:'ativo', descricao: descricao};
+
+    $.post({url:"http://alunos.di.uevora.pt/tweb/t1/controloanuncio", data, success: function(data){
+        alert(data);
+        if(data.resultado =="ok"){
+            alert("Alteração feita com sucesso");
+        }else{
+            alert("Erro na execução da alteração (não inclua caracteres acentuados na descrição)");
+        }
+    }});
 }
 
 function modifyAdStateFromInativo(aid){
-    alert(JSON.stringify(aid));
+    var descricao= prompt("Descrição:");
+    var data= {aid: aid, estado:'inativo', descricao: descricao};
+
+    $.post({url:"http://alunos.di.uevora.pt/tweb/t1/controloanuncio", data, success: function(data){
+        alert(data);
+        if(data.resultado =="ok"){
+            alert("Alteração feita com sucesso");
+        }else{
+            alert("Erro na execução da alteração (não inclua caracteres acentuados na descrição)");
+        }
+    }});
 }
