@@ -28,18 +28,19 @@ $(document).ready(function () {
                                 "color": "white",
                                 "font-size": "18px",
                                 "background-color": "rgba(56, 138, 170, 0.904)",
-                                "border": "1px solid #000000",
                                 "box-shadow": "0 4px 8px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-                                "margin": "2% 1% 1% 2%",
+                                "margin": "2% 1% 1% 10%",
                                 "display": "inline-block",
                                 "width": "33%",
                                 "text-align": "center",
                                 "border-radius": "15px"
                             });
-
+                            
 
                         }
+                        $("#mensagens").append("<br><br><br>");
                     }
+                    
                 }else{
                     alert("Erro na leitura das mensagens");
                 }

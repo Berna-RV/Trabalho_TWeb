@@ -99,7 +99,7 @@ function modifyAdStateFromAtivo(aid){
     var data= {aid: aid, estado:'ativo', descricao: descricao};
 
     $.post({url:"http://alunos.di.uevora.pt/tweb/t1/controloanuncio", data, success: function(data){
-        alert(data);
+        
         if(data.resultado =="ok"){
             alert("Alteração feita com sucesso");
         }else{
@@ -113,7 +113,7 @@ function modifyAdStateFromInativo(aid){
     var data= {aid: aid, estado:'inativo', descricao: descricao};
 
     $.post({url:"http://alunos.di.uevora.pt/tweb/t1/controloanuncio", data, success: function(data){
-        alert(data);
+        
         if(data.resultado =="ok"){
             alert("Alteração feita com sucesso");
         }else{
